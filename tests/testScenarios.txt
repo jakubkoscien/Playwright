@@ -1,0 +1,39 @@
+TC_Basic_01: Verify login with valid credentials
+Navigate to the login page
+Enter valid email id and password
+Click on the login button
+Expected: User should see successful message 'Login Successful' and Button 'Back to Login'
+
+TC_Basic_02: Verify login with invalid credentials
+Navigate to the login page
+Enter invalid email id or password
+Click on the login button
+Expected: Error message 'Invalid email id and password' should be displayed
+
+TC_Basic_03: Check UI elements of the login page
+Navigate to the login page
+Check the presence of Email Address, Password fields, Login button, Forget Password Link and Register now Link
+Expected: All UI elements should be displayed properly
+
+TC_Basic_04: Verify login button is enable and validate error message when fields are empty
+Navigate to the login page
+Keep username and password fields empty
+Click the login button
+Expected: Login button should be enabled and should get Error message 'Email and Password are required'
+
+TC_Basic_05: Verify password field is masked
+Navigate to the login page
+Enter password in the password field
+Expected: Password should be masked with dots
+
+TC_Basic_06: Verify error message when username is entered but password field is left blanked
+Navigate to the login page
+Enter valid username and keep password fields empty
+Click the login button
+Expected: Error message 'Password is required'
+
+TC_Basic_07: Verify error message when email id entered in invalid format
+Navigate to the login page
+Enter invalid format username (i.e. abc123)
+Click the login button
+Expected: Error message 'Please include an '@' in the email address. 'abc123' is missing '@''
